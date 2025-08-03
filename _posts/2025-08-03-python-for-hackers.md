@@ -80,7 +80,8 @@ This is a personal reference and guide I’m putting together to organize all th
 import sys,os,subprocess,shutil
 ```
 
-("sys")[https://docs.python.org/3/library/sys.html]
+[sys](https://docs.python.org/3/library/sys.html)
+
 - Library allows you to interact with the Python interpreter we can use it to:
 * handle command-line arguments
 * managing i/o
@@ -105,4 +106,3 @@ sys.argv is a list conatins all the arguments
     sys.stdout.write("Hello World") # like print
     sys.stderr.write("[!] Error ...") # print to stderr
     sys.exit(0) # exit from the program
-    
