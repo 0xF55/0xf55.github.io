@@ -1,3 +1,12 @@
+---
+layout: post
+title: "Python For Offensive Security (Basics)"
+date: 2025-08-03
+categories: [Intro]
+tags: [python,system,files]
+---
+
+
 # Basics
 
 ### System & Files 
@@ -81,4 +90,5 @@ dir_path = os.path.dirname(full_path) # C:\Windows\System32
 ```
 
 - That was the most used functions in os module
+
 
