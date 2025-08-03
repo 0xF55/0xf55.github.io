@@ -43,7 +43,7 @@ This is a personal reference and guide I’m putting together to organize all th
 1. Gathering IPs, DNS, Whois info  
 2. Searching for usernames, phone numbers  
 3. Using APIs like Shodan, Censys  
-4. Writing custom recon tools  
+4. Writing own recon tools
 
 ### Malware Development
 
