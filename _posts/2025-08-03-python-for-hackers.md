@@ -73,3 +73,4 @@ This is a personal reference and guide I’m putting together to organize all th
 ## Starting
 
 
+[Basics](https://0xf55.github.io/posts/basics)
