@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Python For Offensive Security"
 date: 2025-08-03
 categories: [Intro]
