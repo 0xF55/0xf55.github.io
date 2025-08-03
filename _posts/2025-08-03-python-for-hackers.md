@@ -72,5 +72,4 @@ This is a personal reference and guide I’m putting together to organize all th
 
 ## Starting
 
-[Basics](/2025/08/03/basics.html)
 
