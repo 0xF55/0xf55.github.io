@@ -10,6 +10,14 @@ This is a personal reference and guide I’m putting together to organize all th
 
 ---
 
+## Requirements
+
+1. Good experience in Python 
+2. Networks Basics
+3. Web Basics
+
+---
+
 ## Table of Contents
 
 ### Basics
@@ -60,6 +68,8 @@ This is a personal reference and guide I’m putting together to organize all th
 1. Building full tools based on what’s covered above  
 2. Adding simple UIs like ASCII banners, colored output
 
+---
+
 ## Starting
 
 ### System & Files 
@@ -69,6 +79,12 @@ This is a personal reference and guide I’m putting together to organize all th
 ```python
 import sys,os,subprocess,shutil
 ```
+
+("sys")[https://docs.python.org/3/library/sys.html]
+- Library allows you to interact with the Python interpreter we can use it to:
+* handle command-line arguments
+* managing i/o
+* exit from the program
 
 First we need to know what is command line arguments ?
 its a value passed to the program when executing it:
@@ -83,3 +99,10 @@ val1 = sys.argv[1]
 val2 = sys.argv[2]
 ```
 sys.argv is a list conatins all the arguments
+
+- this is another usages
+```python
+    sys.stdout.write("Hello World") # like print
+    sys.stderr.write("[!] Error ...") # print to stderr
+    sys.exit(0) # exit from the program
+    
