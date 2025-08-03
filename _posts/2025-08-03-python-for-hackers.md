@@ -99,10 +99,25 @@ script = sys.argv[0] # programe name
 val1 = sys.argv[1] 
 val2 = sys.argv[2]
 ```
-sys.argv is a list conatins all the arguments
+sys.argv is a list that conatins all the arguments
 
 - this is another usages
+
 ```python
-    sys.stdout.write("Hello World") # like print
-    sys.stderr.write("[!] Error ...") # print to stderr
-    sys.exit(0) # exit from the program
+sys.stdout.write("Hello World") # like print
+sys.stderr.write("[!] Error ...") # print to stderr
+sys.exit(0) # exit from the program
+```
+
+[subprocess](https://docs.python.org/3/library/subprocess.html)
+- allows you to run external commands and programs from your Python code.
+
+- Examples:
+
+```python
+cmd = 'powershell -ep bypass -c Write-Host "Hello World"' # Command to execute
+cmd2 = 'python -m http.server 8080'
+subprocess.run(cmd) # The Execution will stop until it ends
+subprocess.Popen(cmd2,stdout=subprocess.DEVNULL) # Background Process
+result = subprocess.check_output(cmd,text=True) # result = "Hello World"
+```
