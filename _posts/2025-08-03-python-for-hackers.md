@@ -26,7 +26,7 @@ This is a personal reference and guide I’m putting together to organize all th
 2. Useful Python libraries for network interaction  
 3. Writing tools based on what’s explained  
 
-### Web
+### Web 
 
 1. Explaining common web attacks  
 2. Python libraries for web requests and parsing  
@@ -58,4 +58,28 @@ This is a personal reference and guide I’m putting together to organize all th
 ### Real Projects
 
 1. Building full tools based on what’s covered above  
-2. Adding simple UIs like ASCII banners, colored output  
+2. Adding simple UIs like ASCII banners, colored output
+
+## Starting
+
+### System & Files 
+
+- In this part we will use these three libraries.
+
+```python
+import sys,os,subprocess,shutil
+```
+
+First we need to know what is command line arguments ?
+its a value passed to the program when executing it:
+
+```bash
+python3 script.py val1 val2 val3
+```
+We can access these values using:
+```python
+script = sys.argv[0] # programe name
+val1 = sys.argv[1] 
+val2 = sys.argv[2]
+```
+sys.argv is a list conatins all the arguments
