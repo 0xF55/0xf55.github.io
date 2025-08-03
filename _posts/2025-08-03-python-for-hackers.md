@@ -121,3 +121,36 @@ subprocess.run(cmd) # The Execution will stop until it ends
 subprocess.Popen(cmd2,stdout=subprocess.DEVNULL) # Background Process
 result = subprocess.check_output(cmd,text=True) # result = "Hello World"
 ```
+[os](https://docs.python.org/3/library/os.html)
+
+- provides a way to interact with the operating system.
+- It allows you to perform common tasks like managing files and directories
+- working with environment variables, and executing system commands
+
+- Useful Examples:
+
+```python
+os_name = os.name # "nt" if windows "posix" if linux
+currdir = os.getcwd() # Get Current Directory
+files = os.listdir() # return list with files,dirs in current or specific dir
+partitions = os.listdrives() # ['C:\\','D:\\'....]
+env_vars = os.getenv("TEMP") # Env Variables C:\Users\...\AppData\Local\Temp
+os.system("clear") # execute command
+os.popen("any code") # background process
+os.mkdir("NewDir") # make directory
+os.chdir("Downloads") # change Directory
+os.rename("old.txt","new.txt") # rename file
+os.remove("file.txt") # remove file
+os.rmdir("temporary") # remove empty directory
+os.chmod("new.txt",777) # change file privilages
+if os.path.exists("path"): pass # check if path exists
+if os.path.isfile("path"): pass # check is file
+if os.path.isdir("path"): pass # check if is directory
+size = os.path.getsize("new.txt") # get file size (bytes)
+full_path = os.path.join("C:\\Windows","System32\\calc.exe") # Merge two pathes
+file_name = os.path.basename(full_path) # calc.exe
+dir_path = os.path.dirname(full_path) # C:\Windows\System32
+```
+
+- That was the most used functions in os module
+
