@@ -53,15 +53,6 @@ This is a personal reference and guide I’m putting together to organize all th
 3. Using APIs like Shodan, Censys  
 4. Writing own recon tools
 
-### Malware Development
-
-1. Shellcode execution  
-2. Backdoors, stealers, and similar payloads  
-3. Simple C2 and RAT  
-4. Code obfuscation
-5. Converting Python scripts to executables  
-6. Basics of malware analysis  
-
 ### Real Projects
 
 1. Building full tools based on what’s covered above  
