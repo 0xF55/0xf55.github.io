@@ -55,13 +55,12 @@ This is a personal reference and guide I’m putting together to organize all th
 
 ### Malware Development
 
-1. Loaders and droppers  
-2. Shellcode execution  
-3. Backdoors, stealers, and similar payloads  
-4. Simple C2 and RAT  
-5. Code obfuscation
-6. Converting Python scripts to executables  
-7. Basics of malware analysis  
+1. Shellcode execution  
+2. Backdoors, stealers, and similar payloads  
+3. Simple C2 and RAT  
+4. Code obfuscation
+5. Converting Python scripts to executables  
+6. Basics of malware analysis  
 
 ### Real Projects
 
