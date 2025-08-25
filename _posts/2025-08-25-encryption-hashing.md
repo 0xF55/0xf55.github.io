@@ -3,7 +3,8 @@
 **Encryption:** *is a process of converting readable data `plaintext` to unreadable data `cipher text`.*
 
 - **this process will done using `encryption` keys**
-___
+
+---
 
 - ### How Encryption Works ?
 
