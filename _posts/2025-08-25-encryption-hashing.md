@@ -8,15 +8,16 @@ ___
 - ### How Encryption Works ?
 
 - **Using mathematical operations between the `plaintext`  and `key`**
-- **Then this will create the `cipher text`->`Encrypted`**
+- **Then this will create the `cipher text` `Encrypted`**
 ---
 - **There are two types of encryption :**
 
-|Symmetric|Asymmetric|
-|-------------|-------|
-|Same Key Used for `Encryption` and `Decryption` | There is **Public Key** for `Encryption` and **Private Key** for `Decryption`
-Faster Than   Asymmetric but *Not Secure as Asymmetric*          | Slower Than Symmetric but *More Secure*       |
-| **Example:** `AES` , `ChaCha20` , `RC4`| **Example:** `RSA`
+| Symmetric | Asymmetric |
+|-----------|------------|
+| Same Key Used for `Encryption` and `Decryption` | There is **Public Key** for `Encryption` and **Private Key** for `Decryption` |
+| Faster Than Asymmetric but *Not Secure as Asymmetric* | Slower Than Symmetric but *More Secure* |
+| **Example:** `AES`, `ChaCha20`, `RC4` | **Example:** `RSA` |
+
 ---
 
 *There is 2 modules we will use in this part*:
@@ -45,7 +46,9 @@ Faster Than   Asymmetric but *Not Secure as Asymmetric*          | Slower Than S
 2. **WPA2/WPA3**
 3. **Operating Systems.....**
 4. **And Maybe in `VPN`'s**
+
 ---
+
 - Now lets go to the practical part:
 
 using [PyCryptoDome](https://pypi.org/project/pycryptodome/)
@@ -122,6 +125,7 @@ b'Hello World'
 2. **Email Encryption** (PGP/GPG)
 3. **Digital Signatures** (authentication)
 4. **VPNs** (for key exchange)
+
 ---
 
 - Now let's go to the practical part using [PyCryptoDome](https://pypi.org/project/pycryptodome/):
