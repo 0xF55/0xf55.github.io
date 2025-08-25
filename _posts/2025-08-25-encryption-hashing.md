@@ -48,7 +48,7 @@ Faster Than   Asymmetric but *Not Secure as Asymmetric*          | Slower Than S
 ---
 - Now lets go to the practical part:
 
-using [PyCryptoDome]("https://pypi.org/project/pycryptodome/"):
+using [PyCryptoDome](https://pypi.org/project/pycryptodome/)
 
 ```python
 from Crypto.Cipher import AES
