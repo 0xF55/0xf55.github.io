@@ -1,3 +1,4 @@
+---
 layout: post
 title: "Python For Offensive Security Encryption & Hashing"
 date: 2025-08-03
