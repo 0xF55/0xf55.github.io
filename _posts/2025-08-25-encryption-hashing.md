@@ -5,7 +5,11 @@ date: 2025-08-03
 categories: [encryption]
 ---
 
-## # *Encryption*
+**- بسم الله**
+
+---
+
+## - *Encryption*
 
 **Encryption:** *is a process of converting readable data `plaintext` to unreadable data `cipher text`.*
 
@@ -249,3 +253,132 @@ Encrypted: ;☼▲
 Tf]A▼☺
 Decrypted: Hello World
 ```
+
+---
+
+## - Hashing
+
+- ### What is hashing ?
+
+- hashing is a process of converting big amount of data like **file** or **password** or **any data** to *fixed size value* we call it **hash**
+
+**Example:** 5eb63bbbe01eeed093cb22bb8f5acdc3 
+
+*This Hash For **hello world** in `md5` algorithm*
+
+---
+
+- ### How Hashing Works ?
+
+- hashing can implemented using hashing algorithms like `md5`,`sha256`,`sha512` and more...
+
+---
+
+- ### Why use hashing ?
+
+1. To ensure data integrity
+
+2. another common use is to verify passwords. Instead of storing passwords in plain text in databases, we store the password hash. When we verify it, we convert the entered password to a hash and verify it.
+
+- you will face this use a lot 
+
+---
+
+### - Practical Part
+
+- we will use `hashlib` and `zyntra` modules
+
+```python
+import hashlib
+
+password = "mypassword123"
+
+hashed_md5 = hashlib.md5(password.encode()).hexdigest()
+hashed_sha256 = hashlib.sha256(password.encode()).hexdigest()
+
+print("MD5:",hashed_md5)
+print("SHA256:",hashed_sha256)
+```
+
+```python
+MD5: 9c87baa223f464954940f859bcf2e233
+SHA256: 6e659deaa85842cdabb5c6305fcc40033ba43772ec00d45c2a3c921741a5e377
+```
+
+- hexdigest() to print hash in hex
+
+- as you can see md5 is a weak hashing algorithm, we can break it eaiser than sha256,sha512
+
+---
+
+### - Breaking Hashes
+
+- Now lets try making a md5 hash breaker
+
+- **idea**:
+    1. we will make a script that take arguments `hash` and `wordlist`
+    2. in the script we will loop over the wordlist and compare the **hash**
+
+### - MD5 Breaker
+
+```python
+from zyntra import FileObj
+import hashlib
+import sys
+
+if len(sys.argv) < 3:
+    print(f"Usage: python3 {sys.argv[0]} <hash> <wordlist>")
+    exit(1)
+
+hashed = sys.argv[1]
+wordlist = sys.argv[2]
+
+
+def check_hash(password: str):
+    # getting hash for the password
+    pass_hash = hashlib.md5(password.encode()).hexdigest()
+    # compare the hash
+    if pass_hash == hashed:
+        print("Password Found:",password)
+        exit(0)
+    else:
+        print("Trying",password)
+
+f = FileObj(wordlist)
+if not f.exist():
+    print("[!] Wordlist Not Exist")
+    exit(1)
+
+passwords = f.stripped_lines() # read lines stripped
+
+for password in passwords:
+    check_hash(password)
+```
+
+- Lets Try Breaking this hash `482c811da5d5b4bc6d497ffa98491e38`
+
+```python
+python hashing.py 482c811da5d5b4bc6d497ffa98491e38 passwords.txt
+```
+```
+Trying secret123
+Trying mypassword
+Trying helloworld
+Trying 12345678
+Trying 0987654321
+Trying llllllllll
+Password Found: password123
+```
+
+- Here we go
+
+### - Challenge
+
+- i want you to create sha256 hash breaker and optimize it using threading module
+
+
+### - Ending
+
+- i wish you love this part
+- try to train yourself on many projects
+- **مع السلامه**
