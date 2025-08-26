@@ -1,3 +1,9 @@
+layout: post
+title: "Python For Offensive Security Encryption & Hashing"
+date: 2025-08-03
+categories: [Intro]
+---
+
 ## # *Encryption*
 
 **Encryption:** *is a process of converting readable data `plaintext` to unreadable data `cipher text`.*
